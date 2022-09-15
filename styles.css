@@ -11,6 +11,18 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
+
+.button-design{
+  color: white;
+  float: right;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
 .box-container {
   width: 70%;
   margin: 0 auto;
@@ -208,6 +220,27 @@ button {
   #histories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  
+  
+}
+
+/* Desktop Devices */
+@media only screen and (min-width:992px) and (max-width:1200px) {
+  .box-container {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     row-gap: 10px;
   }
